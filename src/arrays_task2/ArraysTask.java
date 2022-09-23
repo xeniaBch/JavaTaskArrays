@@ -19,10 +19,11 @@ public class ArraysTask {
             }
             if (!inListNotRepeated) {
                 notRepeated.add(j);
+                continue;
             }
-            if (inListNotRepeated) {
+
                 alreadyRepeated.add(j);
-            }
+
         }
 
         int[] res = new int[alreadyRepeated.size()];
